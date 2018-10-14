@@ -1,7 +1,18 @@
 body {
   padding-top: 70px;
+	background-image:"url('background-brick-wall.jpg');width(100px);height(100px)";
 }
 body>div.container {
   width: 80%;
   margin: auto;
 }
+h1 {
+	color: beige;
+}
+<style>
+a:link {
+	color: green;
+	background-color: transparent;
+	text-decoration: none;
+}
+</style>
