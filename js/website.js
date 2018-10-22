@@ -1,4 +1,4 @@
-<--Else-->
+// Else
 (function( $ ) {
 
     //Function to animate slider captions
