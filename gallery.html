@@ -6,17 +6,31 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="css/website.css">
+    <!-- <link rel="stylesheet" href="css/website.css"> -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/website.js"></script>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
   </head>
   <body>
-    <nav class="navbar navbar-fixed-top">
-      <div class="container">
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"><svg-icon><src href="sprite.svg#si-glyph-arrow-two-up" /></svg-icon></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html ">Hidden Art</a>
+        </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-central">
+          <ul class="nav navbar-nav navbar-right">
             <a href="index.html"><img src="images/home.jpg" style="width:150px;height:50px"></a>
             <a href="why.html"><img src="images/why.jpg" style="width:150px;height:50px"></a>
             <a href="origin.html"><img src="images/origin.jpg" style="width:150px;height:50px"></a>
@@ -28,108 +42,131 @@
         </div>
       </div>
     </nav>
-    <h2>Sheffield in my eyes</h2>
 
     <div class="container">
-                <div class="row blog">
-                    <div class="col-md-12">
-                        <div id="blogCarousel" class="carousel slide" data-ride="carousel">
+        <div class="row">
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="gallery-title">Sheffield in my eyes</h1>
+            </div>
 
-                            <ol class="carousel-indicators">
-                                <li data-target="#blogCarousel" data-slide-to="0" class="active"></li>
-                                <li data-target="#blogCarousel" data-slide-to="1"></li>
-                            </ol>
+            <div align="center">
+                <button class="btn btn-default filter-button" data-filter="all">All</button>
+                <button class="btn btn-default filter-button" data-filter="colorful">Colorful</button>
+                <button class="btn btn-default filter-button" data-filter="blacknwhite">Black&White</button>
+                <button class="btn btn-default filter-button" data-filter="night">Night</button>
+                <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+            </div>
+            <br/>
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter colorful">
+                    <img src="images/sheff_graff.jpg" class="img-responsive">
+                </div>
 
-                            <!-- Carousel items -->
-                            <div class="carousel-inner">
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter blacknwhite">
+                    <img src="images/sheff_graff2.jpg" class="img-responsive">
+                </div>
 
-                                <div class="carousel-item active">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="images/sheff_graff.jpg" alt="Image" style="max-width:30%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="images/sheff_graff2.jpg" alt="Image" style="max-width:30%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="images/sheff_graff3.jpg" alt="Image" style="max-width:30%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="images/sheff_graff4.jpg" alt="Image" style="max-width:30%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="images/sheff_graff5.jpg" alt="Image" style="max-width:30%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="images/sheff_graff6.jpg" alt="Image" style="max-width:30%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="images/sheff_graff7.jpg" alt="Image" style="max-width:30%;">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!--.row-->
-                                </div>
-                                <!--.item-->
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter blacknwhite">
+                    <img src="images/sheff_graff3.jpg" class="img-responsive">
+                </div>
 
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="images/sheff_graff8.jpg" alt="Image" style="max-width:30%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="images/sheff_graff9.jpg" alt="Image" style="max-width:30%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="images/sheff_graff10.jpg" alt="Image" style="max-width:30%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="images/sheff_graff11.jpg" alt="Image" style="max-width:30%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="images/sheff_graff12.jpg" alt="Image" style="max-width:30%;">
-                                            </a>
-                                        </div>
-                                        <div class="col-md-3">
-                                            <a href="#">
-                                                <img src="images/sheff_graff13.jpg" alt="Image" style="max-width:30%;">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <!--.row-->
-                                </div>
-                                <!--.item-->
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter colorful">
+                    <img src="images/sheff_graff4.jpg" class="img-responsive">
+                </div>
 
-                            </div>
-                            <!--.carousel-inner-->
-                        </div>
-                        <!--.Carousel-->
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter colorful">
+                    <img src="images/sheff_graff5.jpg" class="img-responsive">
+                </div>
 
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter colorful">
+                    <img src="images/sheff_graff6.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter colorful">
+                    <img src="images/sheff_graff7.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter blacknwhite">
+                    <img src="images/sheff_graff8.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter blacknwhite">
+                    <img src="images/sheff_graff9.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter night">
+                    <img src="images/sheff_graff10.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter night">
+                    <img src="images/sheff_graff12.jpg" class="img-responsive">
+                </div>
+
+                <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter night">
+                    <img src="images/sheff_graff13.jpg" class="img-responsive">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="gallery-title">Other goodies</h1>
+                </div>
+
+                <div align="center">
+                    <button class="btn btn-default filter-button" data-filter="all">All</button>
+                    <button class="btn btn-default filter-button" data-filter="buildings">Buildings</button>
+                    <button class="btn btn-default filter-button" data-filter="galleries">Galleries</button>
+                    <button class="btn btn-default filter-button" data-filter="vehicles">Vehicles</button>
+                    <button class="btn btn-default filter-button" data-filter="funny">Funny</button>
+                </div>
+                <br/>
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter vehicles">
+                        <img src="images/car.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter buildings">
+                        <img src="images/street2.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter funny">
+                        <img src="images/cool.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter buildings">
+                        <img src="images/cats.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter galleries">
+                        <img src="images/art_gallery2.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter funny">
+                        <img src="images/funny.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter buildings">
+                        <img src="images/campus.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter galleries">
+                        <img src="images/art_gallery3.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter funny">
+                        <img src="images/phonecab.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter vehicles">
+                        <img src="images/car2.jpg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter buildings">
+                        <img src="images/cool2.jpeg" class="img-responsive">
+                    </div>
+
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter funny">
+                        <img src="images/funny2.jpeg" class="img-responsive">
                     </div>
                 </div>
-    </div>
-
+        </div>
   </body>
 </html>

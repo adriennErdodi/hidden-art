@@ -16,9 +16,6 @@ h1 {
   padding-top: 50px;
 }
 
-<!--Origin-->
-
-
 <!--Else-->
 /*Now the styles*/
 * {
@@ -383,20 +380,54 @@ width: 640px;
 
 
 <!--Gallery-->
-.blog .carousel-indicators {
-	left: 0;
-	top: auto;
-    bottom: -40px;
+.gallery-title
+{
+    font-size: 36px;
+    color: #42B32F;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+.gallery-title:after {
+    content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid #5e5e5e;
+}
+.filter-button
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #42B32F;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid #42B32F;
+    border-radius: 5px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #42B32F;
+
+}
+.btn-default:active .filter-button:active
+{
+    background-color: #42B32F;
+    color: white;
 }
 
-/* The colour of the indicators */
-.blog .carousel-indicators li {
-    background: #a3a3a3;
-    border-radius: 50%;
-    width: 8px;
-    height: 8px;
+.port-image
+{
+    width: 100%;
 }
 
-.blog .carousel-indicators .active {
-background: #707070;
+.gallery_product
+{
+    margin-bottom: 30px;
 }
