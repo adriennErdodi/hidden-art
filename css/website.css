@@ -1,10 +1,15 @@
 head {
   background-image:url("background-brick-wall2.jpg");
+  background-size: cover;
 }
 
+header {
+  text-align: center;
+}
 body {
   padding-top:5px;
 	background-image:url("background-brick-wall2.jpg");
+  background-size: cover;
   color:white;
   font-size:150%;
 }
@@ -15,8 +20,13 @@ body>div.container {
 h1 {
   padding-top: 50px;
 }
+table {
+  width: 200px;
+}
 
-<!--Else-->
+
+
+/*Else*/
 /*Now the styles*/
 * {
     margin: 0;
@@ -94,7 +104,9 @@ width: 640px;
 	font-size: 16px;
 }
 
-<!--Else-->
+
+
+/*Gallery*/
 <link rel="stylesheet" href="http://cdn.bootcss.com/animate.css/3.5.1/animate.min.css">
 
 

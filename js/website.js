@@ -37,7 +37,8 @@
 })(jQuery);
 
 
-<!--Gallery-->
+
+//Gallery
 $(document).ready(function(){
 
     $(".filter-button").click(function(){

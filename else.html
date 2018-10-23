@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Optional theme -->
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">-->
-    <!-- <link rel="stylesheet" href="css/website.css"> -->
+    <link rel="stylesheet" href="css/website.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -53,63 +53,6 @@
         </ul>
       <h2>The artists</h2>
 
-      <section class="gallery">
-        <div class="carousel">
-
-          <input type="radio" id="image1" name="gallery-control" checked>
-          <input type="radio" id="image2" name="gallery-control">
-          <input type="radio" id="image3" name="gallery-control">
-          <input type="radio" id="image4" name="gallery-control">
-
-          <input type="checkbox" id="fullscreen" name="gallery-fullscreen-control"/>
-
-          <div class="wrap">
-
-            <figure>
-              <label for="fullscreen">
-                <img src="images/mask2.jpg" alt="image1"/>
-              </label>
-            </figure>
-
-            <figure>
-              <label for="fullscreen">
-                <img src="images/artists2.jpg" alt="image2"/>
-              </label>
-            </figure>
-
-            <figure>
-              <label for="fullscreen">
-                <img src="images/artists.jpg" alt="image3" />
-              </label>
-            </figure>
-
-            <figure>
-              <label for="fullscreen">
-                <img src="images/women.jpg" alt="image4"/>
-              </label>
-            </figure>
-
-          </div>
-
-          <div class="thumbnails">
-
-            <div class="slider"><div class="indicator"></div></div>
-
-            <label for="image1" class="thumb" style="background-image: url('images/mask2.jpg')"></label>
-
-            <label for="image2" class="thumb" style="background-image: url('images/artists2.jpg')"></label>
-
-            <label for="image3" class="thumb" style="background-image: url('images/artists.jpg')"></label>
-
-            <label for="image4" class="thumb" style="background-image: url('images/women.jpg')"></label>
-
-          </div>
-
-        </div>
-      </section>
-
-      <h2>Cool places</h2>
-
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
 
@@ -121,35 +64,79 @@
       				<li data-target="#carousel" data-slide-to="1" class=""></li>
       				<li data-target="#carousel" data-slide-to="2" class=""></li>
       				<li data-target="#carousel" data-slide-to="3" class=""></li>
+              <li data-target="#carousel" data-slide-to="4" class=""></li>
+              <li data-target="#carousel" data-slide-to="5" class=""></li>
+      			</ol>
+      			<!-- Carousel items -->
+      			<div class="carousel-inner carousel-zoom">
+      				<div class="item active"><img class="img-responsive" src="images/artist.jpg" alt="">
+      				</div>
+      			  <div class="item"><img class="img-responsive" src="images/artist2.webp" alt="">
+      				</div>
+      				<div class="item"><img class="img-responsive" src="images/artists3.jpg" alt="">
+      				</div>
+              <div class="item"><img class="img-responsive" src="images/artist4.jpg" alt="">
+      				</div>
+              <div class="item"><img class="img-responsive" src="images/girls.png" alt="">
+      				</div>
+              <div class="item"><img class="img-responsive" src="images/artist6.jpg" alt="">
+      				</div>
+      			<!-- Carousel nav -->
+      			<a class="carousel-control left" href="#sg-carousel" data-slide="prev">‹</a>
+      			<a class="carousel-control right" href="#sg-carousel" data-slide="next">›</a>
+      		</div>
+      	</div>
+      </div>
+
+      <h2>Cool places</h2>
+
+      <div class="container-fluid">
+      	<div class="row">
+      		<div id="sg-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+      			<ol class="carousel-indicators">
+      				<li data-target="#carousel" data-slide-to="0" class="active"></li>
+      				<li data-target="#carousel" data-slide-to="1" class=""></li>
+      				<li data-target="#carousel" data-slide-to="2" class=""></li>
+      				<li data-target="#carousel" data-slide-to="3" class=""></li>
+              <li data-target="#carousel" data-slide-to="4" class=""></li>
+              <li data-target="#carousel" data-slide-to="5" class=""></li>
       			</ol>
       			<!-- Carousel items -->
       			<div class="carousel-inner carousel-zoom">
       				<div class="item active"><img class="img-responsive" src="images/outdoor_gallery.jpg" alt="">
       				  <div class="carousel-caption">
       					<h1  data-animation="animated zoomInLeft" class="cap-txt ">Hope Outdoor Gallery</h1>
-      					<p data-animation="animated bounceInDown">Find more about me fiverr.com/sangrai</p>
-      					<button data-animation="animated bounceInUp" class="button button--tamaya button--border-thick" data-text="Send"><span>Send</span></button>
+                <p data-animation="animated bounceInDown">Austin, Texas, United States</p>
       				  </div>
       				</div>
       			   <div class="item"><img class="img-responsive" src="images/5pointz.jpg" alt="">
       				  <div class="carousel-caption">
       					<h1 data-animation="animated zoomInLeft" class="cap-txt">5 Pointz</h1>
-      					<p data-animation="animated bounceInDown">Find more about me fiverr.com/sangrai</p>
-      					<button data-animation="animated bounceInUp" class="button button--tamaya button--border-thick" data-text="Send"><span>Send</span></button>
+                <p data-animation="animated bounceInDown">Queens, New York, United States</p>
       				  </div>
       				</div>
       				<div class="item"><img class="img-responsive" src="images/rudledge lane.jpg" alt="">
       				  <div class="carousel-caption animated slideInLeft">
       					<h1 data-animation="animated zoomInLeft" class="cap-txt">Rutledge Lane</h1>
-      					<p data-animation="animated bounceInDown">Get start your next awesome project</p>
-      					<button data-animation="animated bounceInUp" class="button button--tamaya button--border-thick" data-text="Send"><span>Send</span></button>
+                <p data-animation="animated bounceInDown">Melbourne, Australia</p>
       				  </div>
       				</div>
               <div class="item"><img class="img-responsive" src="images/east_side.jpg" alt="">
       				  <div class="carousel-caption animated slideInLeft">
       					<h1 data-animation="animated zoomInLeft" class="cap-txt">East Side Gallery</h1>
-      					<p data-animation="animated bounceInDown">Get start your next awesome project</p>
-      					<button data-animation="animated bounceInUp" class="button button--tamaya button--border-thick" data-text="Send"><span>Send</span></button>
+      					<p data-animation="animated bounceInDown">Berlin, Germany</p>
+      				  </div>
+      				</div>
+              <div class="item"><img class="img-responsive" src="images/graffiti_alley.jpg" alt="">
+      				  <div class="carousel-caption animated slideInLeft">
+      					<h1 data-animation="animated zoomInLeft" class="cap-txt">Graffiti Alley</h1>
+      					<p data-animation="animated bounceInDown">Toronto, Canada</p>
+      				  </div>
+      				</div>
+              <div class="item"><img class="img-responsive" src="images/comm_garden.jpg" alt="">
+      				  <div class="carousel-caption animated slideInLeft">
+      					<h1 data-animation="animated zoomInLeft" class="cap-txt">Nomadic Community Gardens</h1>
+      					<p data-animation="animated bounceInDown">London, United Kingdom</p>
       				  </div>
       				</div>
       			<!-- Carousel nav -->
